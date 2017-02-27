@@ -12,10 +12,6 @@ public class Family {
         Father father = new Father("Janusz");
         Son son = new Son("Sebastian");
         Daugther daugther = new Daugther("Angelika");
-        introduce(mother);
-        introduce(father);
-        introduce(son);
-        introduce(daugther);
 
         FamilyMember[] members = new FamilyMember[]{mother,father,son,daugther};
         System.out.println("Rodzina: ");
@@ -25,7 +21,18 @@ public class Family {
     }
 
     public static void introduce(FamilyMember member) {
-        System.out.println("introduce FamilyMember");
+        if (member instanceof Mother) {
+            introduce((Mother) member);
+        }
+        else if (member instanceof Father) {
+            introduce((Father) member);
+        }
+        else if (member instanceof Son) {
+            introduce((Son) member);
+        }
+        else if (member instanceof Daugther) {
+            introduce((Daugther) member);
+        }
     }
 
     public static void introduce(Mother mother){
