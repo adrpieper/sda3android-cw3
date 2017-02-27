@@ -5,6 +5,7 @@ public abstract class FamilyMember {
 
     public FamilyMember(String name) {
         this.name = name;
+        System.out.println("tworzę członka rodziny");
     }
 
     public void setName(String name) {

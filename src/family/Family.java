@@ -1,5 +1,7 @@
 package family;
 
+import java.util.Arrays;
+
 /**
  * Created by Adrian on 2017-02-27.
  */
@@ -14,8 +16,17 @@ public class Family {
         introduce(father);
         introduce(son);
         introduce(daugther);
+
+        FamilyMember[] members = new FamilyMember[]{mother,father,son,daugther};
+        System.out.println("Rodzina: ");
+        for (FamilyMember member : members) {
+            introduce(member);
+        }
     }
 
+    public static void introduce(FamilyMember member) {
+        System.out.println("introduce FamilyMember");
+    }
 
     public static void introduce(Mother mother){
         System.out.println("I’m a mother. My name is " + mother.getName());
