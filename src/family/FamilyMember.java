@@ -15,4 +15,6 @@ public abstract class FamilyMember {
     public String getName() {
         return name;
     }
+
+    public abstract void introduceYourself();
 }

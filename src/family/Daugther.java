@@ -8,4 +8,8 @@ public class Daugther extends FamilyMember {
         System.out.println("tworzę obiekt córka");
     }
 
+    @Override
+    public void introduceYourself() {
+        System.out.println("I’m a dauther. My name is " + getName());
+    }
 }

@@ -8,4 +8,9 @@ public class Father extends FamilyMember{
         System.out.println("tworzę obiekt ojciec");
     }
 
+    @Override
+    public void introduceYourself() {
+        System.out.println("I’m a father. My name is " + getName());
+    }
+
 }
