@@ -7,18 +7,21 @@ import java.util.Arrays;
  */
 public class Family {
 
-    public static void main(String[] args) {
+    private Mother mother = new Mother("Grażyna");
+    private Father father = new Father("Janusz");
+    private Son son = new Son("Sebastian");
+    private Daugther daugther = new Daugther("Angelika");
 
-        Mother mother = new Mother("Grażyna");
-        Father father = new Father("Janusz");
-        Son son = new Son("Sebastian");
-        Daugther daugther = new Daugther("Angelika");
-
+    public void introduce(){
         FamilyMember[] members = new FamilyMember[]{mother,father,son,daugther};
         System.out.println("Rodzina: ");
         for (FamilyMember member : members) {
             member.introduceYourself();
         }
+    }
 
+    public static void main(String[] args) {
+        Family family = new Family();
+        family.introduce();
     }
 }
