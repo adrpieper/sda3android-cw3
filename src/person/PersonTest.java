@@ -10,11 +10,11 @@ public class PersonTest {
         Object o = new Object();
         Person p = new Person();
 
-        Object[] objects = new Object[]{integer,o,p};
+        Object[] objects = new Object[]{integer,o,p,3,10f};
 
         for (int i = 0 ; i < objects.length ; i++) {
 
-            System.out.println(objects[i].toString());
+            System.out.println(objects[i]);
         }
 
         Person person = new Person();
@@ -22,6 +22,10 @@ public class PersonTest {
         person.setSurname("Kowalski");
         person.setAge(30);
         System.out.println(person);
+        System.out.println("person:");
+        System.out.println(person.getName());
+        System.out.println(person.getSurname());
+        System.out.println(person.getAge());
 
     }
 }
