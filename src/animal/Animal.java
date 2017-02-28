@@ -5,6 +5,12 @@ package animal;
  */
 public abstract class Animal {
 
+    private final boolean isPet;
+
+    protected Animal(boolean isPet) {
+        this.isPet = isPet;
+    }
+
     public abstract void giveSound();
 
     public int getLegsAmount() {

@@ -5,8 +5,17 @@ package animal;
  */
 public class Monkey extends Animal {
 
+    public Monkey() {
+        super(isPet);
+    }
+
     @Override
     public void giveSound() {
         System.out.println("Monkey sound...");
+    }
+
+    @Override
+    public int getLegsAmount() {
+        return 2;
     }
 }
