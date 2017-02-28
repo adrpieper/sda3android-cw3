@@ -6,4 +6,8 @@ package animal;
 public abstract class Animal {
 
     public abstract void giveSound();
+
+    public int getLegsAmount() {
+        return 4;
+    }
 }

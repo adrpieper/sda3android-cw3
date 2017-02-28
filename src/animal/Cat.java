@@ -5,6 +5,10 @@ package animal;
  */
 public class Cat extends Animal {
 
+    public Cat() {
+        super();
+    }
+
     @Override
     public void giveSound() {
         System.out.println("Miał, miał!");
