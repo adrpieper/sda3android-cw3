@@ -5,7 +5,7 @@ package animal;
  */
 public class Monkey extends Animal {
 
-    public Monkey() {
+    public Monkey(boolean isPet) {
         super(isPet);
     }
 

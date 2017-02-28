@@ -11,6 +11,10 @@ public abstract class Animal {
         this.isPet = isPet;
     }
 
+    public boolean isPet() {
+        return isPet;
+    }
+
     public abstract void giveSound();
 
     public int getLegsAmount() {

@@ -10,12 +10,19 @@ public class Animals {
                 new Cat(),
                 new Dog(),
                 new Hamster(),
-                new Monkey()
+                new Monkey(true),
+                new Monkey(false),
         };
 
         for (Animal animal : animals) {
             animal.giveSound();
             System.out.println("Mam " + animal.getLegsAmount() + " nogi.");
+            if (animal.isPet()) {
+                System.out.println("Jestem zwierzęciem domowym");
+
+            }else{
+                System.out.println("Jestem zwierzęciem dzikim");
+            }
         }
 
     }

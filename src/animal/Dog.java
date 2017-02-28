@@ -5,7 +5,7 @@ package animal;
  */
 public class Dog extends Animal {
     public Dog() {
-        super(isPet);
+        super(true);
     }
 
     @Override
